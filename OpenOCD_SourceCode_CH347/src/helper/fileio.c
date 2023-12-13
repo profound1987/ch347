@@ -15,6 +15,8 @@
 #include "config.h"
 #endif
 
+#include <stdio.h>
+
 #include "log.h"
 #include "configuration.h"
 #include "fileio.h"

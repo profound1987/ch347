@@ -12,6 +12,8 @@
 #include "config.h"
 #endif
 
+#include <stdio.h>
+
 #include "configuration.h"
 #include "log.h"
 #include "replacements.h"

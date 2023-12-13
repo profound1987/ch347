@@ -234,8 +234,8 @@ bool ugOpen;
 unsigned long ugIndex;
 struct libusb_device_handle *ch347_handle;
 
-static const uint16_t ch347_vids[] = {0x1a86, 0};
-static const uint16_t ch347_pids[] = {0x55dd, 0};
+static const uint16_t ch347_vids[] = {0x1a86, 0x1a86};
+static const uint16_t ch347_pids[] = {0x55dd, 0x55de};
 
 static uint32_t CH347OpenDevice(uint64_t iIndex)
 {
@@ -1106,11 +1106,11 @@ static int ch347_init(void)
 	DevIsOpened = CH347OpenDevice(ugIndex);
 	ugIndex = DevIsOpened;
 #endif
-	if (DevIsOpened == -1) {
-		LOG_ERROR("CH347 Open Error.");
-		return ERROR_FAIL;
-	} else {
+	if (DevIsOpened == true) {
 		LOG_INFO("CH347 Open Succ.");
+	} else {
+		LOG_ERROR("CH347 Open Error.");
+		return ERROR_FAIL;		
 	}
 
 	if (!swd_mode) {
