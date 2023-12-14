@@ -1,0 +1,3 @@
+[submodule "OpenOCD_SourceCode_CH347/jimtcl"]
+	path = OpenOCD_SourceCode_CH347/jimtcl
+	url = git@github.com:msteveb/jimtcl.git
