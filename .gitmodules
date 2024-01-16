@@ -1,3 +1,6 @@
 [submodule "OpenOCD_SourceCode_CH347/jimtcl"]
 	path = OpenOCD_SourceCode_CH347/jimtcl
-	url = git@github.com:msteveb/jimtcl.git
+	url = https://github.com/msteveb/jimtcl.git
+[submodule "OpenOCD_SourceCode_CH347/src/jtag/drivers/libjaylink"]
+    path = OpenOCD_SourceCode_CH347/src/jtag/drivers/libjaylink
+    url = https://gitlab.zapb.de/libjaylink/libjaylink.git
